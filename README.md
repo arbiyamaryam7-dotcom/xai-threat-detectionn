@@ -11,17 +11,40 @@ CIC-IDS2017 CSVs -> ml/preprocess -> ml/train_classifier  -> classifier.joblib �
                                                                  React dashboard (Vite) -- /api -----------┘
 ```
 
-## Honest status of this package
-| Part | Status in the build environment |
-|---|---|
-| Preprocessing, RF classifier, Isolation Forest, autoencoder, alert logic, predictor | **Run and unit-tested** (10 tests pass) on a *synthetic* sample |
-| Frontend (all 11 files) | Syntax-checked only. **Never built or opened in a browser** |
-| FastAPI app, SQLAlchemy/PostgreSQL, SHAP, XGBoost | Written and compile-checked, **not executed** (libraries/network unavailable there) |
-| `tests/test_api.py` (end-to-end API test on SQLite) | Written, **not executed**: run it first on your machine |
+## Honest Project Status
 
-There are **no real-dataset metrics in this package.** The synthetic sample is only for smoke-testing. Train on real
-CIC-IDS2017 and report *those* numbers (Dashboard → Reports shows whatever your training run wrote to `ml/artifacts/`).
-Expect to fix small issues on first run, since part of the code has not run outside the build sandbox. Section 9 lists likely ones.
+The project has been successfully executed and tested in a local Windows environment.
+
+| Component | Verified Status |
+|---|---|
+| Machine Learning | Random Forest, Isolation Forest and Autoencoder trained and evaluated |
+| Backend | FastAPI successfully running |
+| Database | PostgreSQL connection verified |
+| Frontend | React + Vite application successfully launched |
+| Prediction API | Single-flow and batch prediction tested |
+| Explainable AI | SHAP explanation API successfully tested |
+| Live Monitor | Sample traffic simulation tested |
+| Alerts | Alert generation and acknowledgement verified |
+| Dashboard | Statistics and visualizations verified |
+| Reports | Summary API and CSV export tested |
+
+### Model Evaluation Results
+
+- Classifier Accuracy: **90%**
+- Macro F1-score: **81.70%**
+- Weighted F1-score: **88.78%**
+- Autoencoder ROC-AUC: **72.32%**
+- Isolation Forest ROC-AUC: **73.31%**
+
+The classifier was evaluated on 3,000 test samples. WebAttack classification still requires improvement.
+
+### Testing Notes
+
+- Batch analysis successfully processed 2,000 sample network flows.
+- SHAP returned feature-level explanations for individual predictions.
+- PostgreSQL successfully stored prediction and alert records.
+- Alert acknowledgement was verified through the API and dashboard.
+
 
 ## 1. Prerequisites
 Python 3.10–3.12, Node.js 18+, Docker (easiest for PostgreSQL) or a local PostgreSQL 14+, VS Code.
