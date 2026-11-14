@@ -1,0 +1,117 @@
+[
+  {
+    "true_label": "Benign",
+    "features": {
+      "Destination Port": 22.0,
+      "Flow Duration": 19556.4124,
+      "Total Fwd Packets": 2.0,
+      "Total Backward Packets": 1.0,
+      "Total Length of Fwd Packets": 130.1101,
+      "Total Length of Bwd Packets": 150.3321,
+      "Fwd Packet Length Mean": 65.055,
+      "Bwd Packet Length Mean": 150.3321,
+      "Flow Bytes/s": 14340.1623,
+      "Flow Packets/s": 153.4024,
+      "Flow IAT Mean": 6518.8041,
+      "SYN Flag Count": 0.0,
+      "RST Flag Count": 0.0,
+      "ACK Flag Count": 0.0,
+      "Average Packet Size": 107.6935,
+      "Init_Win_bytes_forward": 8192.0,
+      "Init_Win_bytes_backward": 28960.0,
+      "Idle Mean": 8314.6481
+    }
+  },
+  {
+    "true_label": "DoS",
+    "features": {
+      "Destination Port": 80.0,
+      "Flow Duration": 433042.9339,
+      "Total Fwd Packets": 3.0,
+      "Total Backward Packets": 2.0,
+      "Total Length of Fwd Packets": 821.9886,
+      "Total Length of Bwd Packets": 523.6483,
+      "Fwd Packet Length Mean": 273.9962,
+      "Bwd Packet Length Mean": 261.8241,
+      "Flow Bytes/s": 3107.3984,
+      "Flow Packets/s": 11.5462,
+      "Flow IAT Mean": 86608.5868,
+      "SYN Flag Count": 0.0,
+      "RST Flag Count": 1.0,
+      "ACK Flag Count": 1.0,
+      "Average Packet Size": 267.9102,
+      "Init_Win_bytes_forward": 29200.0,
+      "Init_Win_bytes_backward": 235.0,
+      "Idle Mean": 567379.9551
+    }
+  },
+  {
+    "true_label": "PortScan",
+    "features": {
+      "Destination Port": 41333.0,
+      "Flow Duration": 441.4815,
+      "Total Fwd Packets": 2.0,
+      "Total Backward Packets": 1.0,
+      "Total Length of Fwd Packets": 21.8915,
+      "Total Length of Bwd Packets": 8.2704,
+      "Fwd Packet Length Mean": 10.9457,
+      "Bwd Packet Length Mean": 8.2704,
+      "Flow Bytes/s": 68319.7449,
+      "Flow Packets/s": 6795.301,
+      "Flow IAT Mean": 147.1605,
+      "SYN Flag Count": 1.0,
+      "RST Flag Count": 0.0,
+      "ACK Flag Count": 0.0,
+      "Average Packet Size": 9.6081,
+      "Init_Win_bytes_forward": 65535.0,
+      "Init_Win_bytes_backward": 0.0,
+      "Idle Mean": 0.0
+    }
+  },
+  {
+    "true_label": "BruteForce",
+    "features": {
+      "Destination Port": 22.0,
+      "Flow Duration": 151958.006,
+      "Total Fwd Packets": 6.0,
+      "Total Backward Packets": 13.0,
+      "Total Length of Fwd Packets": 48.0567,
+      "Total Length of Bwd Packets": 531.5963,
+      "Fwd Packet Length Mean": 8.0094,
+      "Bwd Packet Length Mean": 40.892,
+      "Flow Bytes/s": 3814.5602,
+      "Flow Packets/s": 125.0345,
+      "Flow IAT Mean": 7997.7898,
+      "SYN Flag Count": 0.0,
+      "RST Flag Count": 0.0,
+      "ACK Flag Count": 1.0,
+      "Average Packet Size": 24.4507,
+      "Init_Win_bytes_forward": 8192.0,
+      "Init_Win_bytes_backward": 229.0,
+      "Idle Mean": 233.0836
+    }
+  },
+  {
+    "true_label": "WebAttack",
+    "features": {
+      "Destination Port": 80.0,
+      "Flow Duration": 38111.9977,
+      "Total Fwd Packets": 25.0,
+      "Total Backward Packets": 14.0,
+      "Total Length of Fwd Packets": 728.486,
+      "Total Length of Bwd Packets": 531.532,
+      "Fwd Packet Length Mean": 29.1394,
+      "Bwd Packet Length Mean": 37.9666,
+      "Flow Bytes/s": 33060.9298,
+      "Flow Packets/s": 1023.2998,
+      "Flow IAT Mean": 977.2307,
+      "SYN Flag Count": 0.0,
+      "RST Flag Count": 0.0,
+      "ACK Flag Count": 1.0,
+      "Average Packet Size": 33.553,
+      "Init_Win_bytes_forward": 29200.0,
+      "Init_Win_bytes_backward": 229.0,
+      "Idle Mean": 432.7254
+    }
+  }
+]

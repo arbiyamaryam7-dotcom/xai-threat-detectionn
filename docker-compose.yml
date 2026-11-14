@@ -1,0 +1,13 @@
+# PostgreSQL for local development:  docker compose up -d
+services:
+  db:
+    image: postgres:16
+    container_name: xai_postgres
+    environment:
+      POSTGRES_USER: xai_user
+      POSTGRES_PASSWORD: xai_pass
+      POSTGRES_DB: xai_threat
+    ports: ["5432:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+volumes:
+  pgdata:
