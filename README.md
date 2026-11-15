@@ -104,17 +104,24 @@ The classifier was evaluated on 3,000 test samples.
 
 ## Screenshots
 
-Screenshots of the implemented application will be added here.
+### Main Dashboard
+![Dashboard](screenshots/dashboard.png)
 
-Planned screenshots:
+### Live Monitor
+![Live Monitor](screenshots/live%20minitor.png)
 
-- Main Dashboard
-- Live Monitor
-- Analyze and Prediction Result
-- SHAP Explanation
-- Alerts
-- Reports
-- Swagger API Documentation
+### Analyze and Prediction Result
+![Analyze](screenshots/analyze.png)
+
+### Alerts
+![Alerts](screenshots/alerts%20%282%29.png)
+
+### Reports
+![Reports](screenshots/reports.png)
+
+### Swagger API Documentation
+![Swagger](screenshots/swagger.png)
+![Swagger API - Additional View](screenshots/swagger1.png)
 
 ## 1. Prerequisites
 
